@@ -26,20 +26,16 @@ func main()  {
 
 	scanner := bufio.NewScanner(file)
 
-	lineCount := 0
-
     filesMap := make(map[string]int)
 
 	for scanner.Scan() {
 		line :=scanner.Text()
-		lineCount++
 
 		matches := re.FindStringSubmatch(line)
 		if matches == nil {
 			panic(errors.New("no match"))
 		}
 
-		// store in file map
 		fileName := matches[1] + ".go"
 
 		_, ok := filesMap[fileName]

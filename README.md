@@ -1,6 +1,6 @@
 ## Research Repo for the Issue [#15193](https://github.com/vitessio/vitess/issues/15193) from [Vitess](https://github.com/vitessio/vitess)
 
-### Task: Find the occurences of the old range loop format (e.g., `for i := 0; i < n; i++`) 
+### Task: Find the occurrences of the old range loop format (e.g., `for i := 0; i < n; i++`) 
 
 ### Approach: using [ripgrep](https://github.com/BurntSushi/ripgrep?tab=readme-ov-file#ripgrep-rg):
 
@@ -11,7 +11,7 @@
 
 ### Findings* :
 
-- `815` occurences 
+- `815` occurrences 
 - Across `350` unique files
 
 ### ***Note: As of merged PR [#16371](https://github.com/vitessio/vitess/pull/16371)**
